@@ -14,7 +14,7 @@ Get the latest version from [Releases](https://github.com/Lokashaka/lokashaka-ap
 | Linux (64-bit, Ubuntu 22.04+, Debian 12+, Fedora 35+) | `Lokashaka-<version>-x86_64.AppImage` |
 | Linux without FUSE | `Lokashaka-<version>-linux-x86_64.tar.gz` |
 
-Every character can be tried free for 3 days per computer. The AI brain (about 1.1 GB) is downloaded separately inside the app.
+Every character can be tried free for 3 days per computer. The AI brain (about 1.1 GB per language) is needed for chat: the Windows installer can download it for you, or use the Download button inside the app.
 
 ## Windows SmartScreen
 
