@@ -34,8 +34,8 @@ Updates then arrive with your normal system updates (`sudo apt update && sudo ap
 Without the repository you can install the package directly, but you will not get automatic updates:
 
 ```sh
-wget https://github.com/Lokashaka/lokashaka-app/releases/latest/download/lokashaka_1.0.6_amd64.deb
-sudo apt install ./lokashaka_1.0.6_amd64.deb
+wget https://github.com/Lokashaka/lokashaka-app/releases/latest/download/lokashaka_1.0.7_amd64.deb
+sudo apt install ./lokashaka_1.0.7_amd64.deb
 ```
 
 Use `apt` (not `dpkg -i`) so the required system libraries are installed too. Lokashaka then appears in your app menu, or run `lokashaka` in a terminal. Uninstall with `sudo apt remove lokashaka`.
@@ -43,9 +43,9 @@ Use `apt` (not `dpkg -i`) so the required system libraries are installed too. Lo
 ### Arch, Fedora and other distros (AppImage)
 
 ```sh
-wget https://github.com/Lokashaka/lokashaka-app/releases/latest/download/Lokashaka-1.0.6-x86_64.AppImage
-chmod +x Lokashaka-1.0.6-x86_64.AppImage
-./Lokashaka-1.0.6-x86_64.AppImage
+wget https://github.com/Lokashaka/lokashaka-app/releases/latest/download/Lokashaka-1.0.7-x86_64.AppImage
+chmod +x Lokashaka-1.0.7-x86_64.AppImage
+./Lokashaka-1.0.7-x86_64.AppImage
 ```
 
 If it says FUSE is missing, install it (`sudo pacman -S fuse2` on Arch, `sudo apt install libfuse2t64` on Ubuntu 24.04+) or use the tar.gz below.
@@ -53,7 +53,7 @@ If it says FUSE is missing, install it (`sudo pacman -S fuse2` on Arch, `sudo ap
 ### Without FUSE (tar.gz)
 
 ```sh
-tar xzf Lokashaka-1.0.6-linux-x86_64.tar.gz
+tar xzf Lokashaka-1.0.7-linux-x86_64.tar.gz
 ./Lokashaka/lokashaka
 ```
 
