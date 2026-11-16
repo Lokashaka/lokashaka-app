@@ -11,7 +11,7 @@ Get the latest version from [Releases](https://github.com/Lokashaka/lokashaka-ap
 | System | File |
 | --- | --- |
 | Windows 10/11 (64-bit) | `LokashakaSetup-<version>.exe` |
-| Ubuntu 22.04+, Debian 12+ (and Mint, Pop!_OS, Zorin, ...) | `lokashaka_<version>_amd64.deb` |
+| Ubuntu 22.04+, Debian 12+ (and Mint, Pop!_OS, Zorin, ...) | apt repository (recommended) or `lokashaka_<version>_amd64.deb` |
 | Any 64-bit Linux with glibc 2.34+ (Arch, Manjaro, EndeavourOS, Fedora 35+, ...) | `Lokashaka-<version>-x86_64.AppImage` |
 | Linux without FUSE | `Lokashaka-<version>-linux-x86_64.tar.gz` |
 
@@ -19,7 +19,19 @@ Every character can be tried free for 3 days per computer. The AI brain (about 1
 
 ## Install on Linux
 
-### Ubuntu / Debian (.deb)
+### Ubuntu / Debian (recommended: apt repository)
+
+One command adds the signed Lokashaka repository and installs the app:
+
+```sh
+curl -fsSL https://apt.lokashaka.id/install.sh | sudo sh
+```
+
+Updates then arrive with your normal system updates (`sudo apt update && sudo apt upgrade`). The repository is signed with the key `2CCE 3A38 97DD AAC6 E885 1C91 C06E A57C F098 B5B4`; manual setup steps are at [apt.lokashaka.id](https://apt.lokashaka.id). Uninstall with `sudo apt remove lokashaka`.
+
+### Ubuntu / Debian (single .deb file)
+
+Without the repository you can install the package directly, but you will not get automatic updates:
 
 ```sh
 wget https://github.com/Lokashaka/lokashaka-app/releases/latest/download/lokashaka_1.0.5_amd64.deb
